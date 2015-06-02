@@ -1,0 +1,8 @@
+pl:
+  spree:
+    admin:
+      subnav:
+        pages: Strony
+      page_tabs:
+        editing_page: Edytuj stronę
+        page_details: Szczególy strony
