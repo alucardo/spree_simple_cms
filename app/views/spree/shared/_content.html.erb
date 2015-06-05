@@ -1,0 +1,9 @@
+<% content ||= @page %>
+
+<% unless content.nil? %>
+  
+  <div class="container" id="<%= dom_id(content) %>">
+    <%= raw content.content %>    
+  </div>  
+  <br class="clear"/>
+<% end %>

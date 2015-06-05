@@ -1,0 +1,8 @@
+
+<%= render :partial => 'spree/admin/shared/error_messages', :locals => { :target => @page } %>
+
+<% content_for :page_title do %>
+  <%= t(".edit_page") %>
+<% end %>
+
+<%= render :partial => 'form' %>
