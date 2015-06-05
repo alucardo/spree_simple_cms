@@ -1,8 +1,22 @@
 pl:
   spree:
+    page:
+      title: "Nazwa"
+      slug: "Adres URL"
+      meta_tile: "SEO Tytuł"
+      meta_description: "SEO opis"
+      meta_keywords: "SEO slowa kluczowe"
+      content: "Treść"
     admin:
+      sidebar:
+        pages: "Strony"
       subnav:
         pages: Strony
       page_tabs:
         editing_page: Edytuj stronę
         page_details: Szczególy strony
+      pages:
+        index: 
+          title: Tytuł
+          new_page: Dodaj stronę
+          listing_pages: Lista stron

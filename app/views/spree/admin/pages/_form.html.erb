@@ -1,0 +1,31 @@
+<div data-hook="admin_page_form_fields">
+  <%= form_for [:admin, @page], :html => { :multipart => true } do |f| %>
+    <div class="form-group">
+      <%= f.label :title, t('spree.page.title'), :class => "control-label" %>
+      <%= f.text_field :title, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :slug, t('spree.page.slug'), :class => "control-label" %>
+      <%= f.text_field :slug, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :meta_title, t('spree.page.meta_title'), :class => "control-label" %>
+      <%= f.text_field :meta_title, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :meta_keywords, t('spree.page.meta_keywords'), :class => "control-label" %>
+      <%= f.text_field :meta_keywords, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :meta_description, t('spree.page.meta_description'), :class => "control-label" %>
+      <%= f.text_field :meta_description, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :content, t('spree.page.content') , :class => "control-label" %>
+      <%= f.text_area :content, rows: '20', :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "save", class: "btn btn-primary btn-success" %>
+    </div>
+  <% end %>
+</div>
