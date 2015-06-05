@@ -7,6 +7,7 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
 
 group :test do
   gem 'rspec'
+  gem 'shoulda-matchers'
 end
 
 gemspec

@@ -30,11 +30,13 @@ require 'spree/testing_support/controller_requests'
 require 'spree/testing_support/factories'
 require 'spree/testing_support/url_helpers'
 
+
 # Requires factories defined in lib/spree_simple_cms/factories.rb
 require 'spree_simple_cms/factories'
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
+  # config.include Spree::TestingSupport::ControllerRequests
 
   # Infer an example group's spec type from the file location.
   config.infer_spec_type_from_file_location!
@@ -45,6 +47,7 @@ RSpec.configure do |config|
   #
   # visit spree.admin_path
   # current_path.should eql(spree.products_path)
+  # config.include Spree::TestingSupport::ControllerRequests
   config.include Spree::TestingSupport::UrlHelpers
 
   # == Mock Framework
